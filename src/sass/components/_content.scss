@@ -2,7 +2,7 @@
 main {
     background: $clr-gray-95;
     color: $clr-gray-15;
-    padding: 1.0em;
+//  padding: 1.0em;
     padding-bottom: 3.0em;
 }
 
@@ -16,8 +16,6 @@ main {
     h4,
     h5,
     h6 {
-        color: $clr-highlight-alt;
-        text-align: center;
         font-family: 'Open sans', sans-serif;
         @include media($desktop) {
             text-align: left;
@@ -26,10 +24,17 @@ main {
 }
 
 //Index Page Styles
-.logo {
-  display: flex;
-  margin: auto;
+.wrapper {
+  width: 90%;
+  padding: 1em;
 }
+.landing_sec{
+  text-align: left;
+  margin: auto;
+  padding: .2em;
+  display: block;
+}
+
 .button {
   background-color: $clr-drk-green;
   color: white;
@@ -40,9 +45,15 @@ main {
 }
 
 .services_sec {
+  h1 {
+    color: white;
+    font-weight: bolder;
+  }
   h2 {
   color: $clr-light-green;
   }
+  background-color: $clr-drk-green;
+  width: 100%;
 }
 
 .our_work_sec {
