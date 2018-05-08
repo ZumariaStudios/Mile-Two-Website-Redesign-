@@ -17,19 +17,21 @@ main {
     h5,
     h6 {
         font-family: 'Open sans', sans-serif;
+        text-align: center;
         @include media($desktop) {
             text-align: left;
+
         }
     }
 }
 
 //Index Page Styles
 .wrapper {
-  width: 90%;
+  width: 100%;
   padding: 1em;
 }
 .landing_sec{
-  text-align: left;
+
   margin: auto;
   padding: .2em;
   display: block;
@@ -45,6 +47,8 @@ main {
 }
 
 .services_sec {
+  background-color: $clr-drk-green;
+  width: 100%;
   h1 {
     color: white;
     font-weight: bolder;
@@ -52,13 +56,20 @@ main {
   h2 {
   color: $clr-light-green;
   }
-  background-color: $clr-drk-green;
-  width: 100%;
+  .frame {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border: 1px solid red;
+  border-radius: 50%;
+  background-color: white;
+}
 }
 
 .our_work_sec {
   color: black;
-  h3 {
+  h2 {
     font-weight: bold;
+    text-align: left;
   }
 }
