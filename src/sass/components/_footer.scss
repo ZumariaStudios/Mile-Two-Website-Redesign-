@@ -1,6 +1,13 @@
 
 footer {
+  display: flex;
+  margin: auto;
     background-color: $clr-drk-blue;
     color: white;
-    text-align: left;
+    text-align: center;
+
+      .footer_logo {
+        display: inline-block;
+
+      }
 }

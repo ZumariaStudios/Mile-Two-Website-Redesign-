@@ -10,14 +10,6 @@ main {
     margin: 0 auto;
     max-width: $desktop-width;
 
-    h2 {
-        text-align: left;
-
-        @include media($desktop) {
-            text-align: center;
-        }
-    }
-
     h1,
     h2,
     h3,
@@ -25,7 +17,24 @@ main {
     h5,
     h6 {
         color: $clr-highlight-alt;
+        text-align: center;
+        @include media($desktop) {
+            text-align: left;
+        }
     }
 }
 
 //Index Page Styles
+
+.button {
+  background-color: $clr-drk-green;
+  color: white;
+  padding: .5em;
+  border-radius: 8px;
+  display: flex;
+  margin: auto;
+}
+
+h5 {
+  color: $clr-light-green;
+}
