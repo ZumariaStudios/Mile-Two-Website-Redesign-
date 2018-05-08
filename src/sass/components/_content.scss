@@ -18,6 +18,7 @@ main {
     h6 {
         color: $clr-highlight-alt;
         text-align: center;
+        font-family: 'Open sans', sans-serif;
         @include media($desktop) {
             text-align: left;
         }
@@ -35,6 +36,15 @@ main {
   margin: auto;
 }
 
-h5 {
+.services_sec {
+  h2 {
   color: $clr-light-green;
+  }
+}
+
+.our_work_sec {
+  color: black;
+  h3 {
+    font-weight: bold;
+  }
 }
