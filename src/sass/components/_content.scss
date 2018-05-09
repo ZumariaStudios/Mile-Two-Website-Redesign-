@@ -2,13 +2,13 @@
 main {
     background: $clr-gray-95;
     color: $clr-gray-15;
-    padding: 1.0em;
+//  padding: 1.0em;
     padding-bottom: 3.0em;
 }
 
 .content {
-    margin: 0 auto;
-    max-width: $desktop-width;
+    // margin: 0 auto;
+    // max-width: $desktop-width;
 
     h1,
     h2,
@@ -16,26 +16,59 @@ main {
     h4,
     h5,
     h6 {
-        color: $clr-highlight-alt;
-        text-align: center;
         font-family: 'Open sans', sans-serif;
-        @include media($desktop) {
-            text-align: left;
-        }
     }
 }
 
 //Index Page Styles
 
-.services_sec {
-  h2 {
-  color: $clr-light-green;
-  }
-}
+$gradient-transparency: 0.17;
 
-.our_work_sec {
-  color: black;
-  h3 {
-    font-weight: bold;
+.services_sec {
+  background-image: linear-gradient(
+                to bottom,
+                transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%,
+                transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%
+                ), url("img/services_bkg.png");
+  background-size: cover;
+
+  h1.serv_h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 3rem 0 0 3rem;
+  }
+
+  h2.serv_h2 {
+  color: $clr-light-green;
+  margin: auto;
+  padding: 0.5em;
+  text-align: center;
+  }
+
+  p.serv_p {
+    color: white;
+    margin: auto;
+    width: 25rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .slideshow_container {
+    // position: relative;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    @include media($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include media($desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

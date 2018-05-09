@@ -1,13 +1,19 @@
 
 footer {
+  font-family: 'Open sans', sans-serif;
   display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
   margin: auto;
     background-color: $clr-drk-blue;
     color: white;
     text-align: center;
+    font-family: 'Open sans', sans-serif;
 
-      .footer_logo {
-        display: inline-block;
+svg {
+width: 2em;
+fill: pink;
+padding: .3em;
+}
 
-      }
 }
