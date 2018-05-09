@@ -13,12 +13,27 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Curo Venture Studio
-email: cburton@curolegal.com
+title: Mile Two
+email: info@miletwo.us
 description: >- # this means to ignore newlines until "baseurl:"
-  Curo Venture Studio
+  Mile Two Website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.curostudio.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://miletwo.us" # the base hostname & protocol for your site, e.g. http://example.com
+
+collections:
+  projects:
+    output: true
+  team:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "person"
+      linked: false
+
 twitter_username:
 github_username:
 

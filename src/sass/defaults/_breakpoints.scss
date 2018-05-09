@@ -1,4 +1,5 @@
-
+$tablet-width: 563px;
 $desktop-width: 1024px;
 
+$tablet: new-breakpoint(min-width $tablet-width max-width $desktop-width - 1);
 $desktop: new-breakpoint(min-width $desktop-width);

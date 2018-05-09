@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<main class="page page--person">
+  <img class="person__img" src="/img/teamImgs/{{page.image}}" />
+  <h2 class="person__name">{{page.name}}</h2>
+  <p class="person__title">{{page.title}}</p>
+  {% if page.title-secondary != null %}
+    <p class="person__title">{{page.title-secondary}}</p>
+  {% endif %}
+  <div class="person__bio">
+    {{ content }}
+  </div>
+  {% if page.email != null %}
+    <p>{{page.email}}</p>
+  {% endif %}
+</main>
