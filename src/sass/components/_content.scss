@@ -36,7 +36,9 @@ $gradient-transparency: 0.17;
     color: white;
     font-size: 3rem;
     font-weight: bolder;
-    padding: 3rem 0 0 3rem;
+    padding-top: 3rem;
+    text-align: center;
+    margin: auto;
   }
 
   h2.serv_h2 {
@@ -49,13 +51,12 @@ $gradient-transparency: 0.17;
   p.serv_p {
     color: white;
     margin: auto;
-    width: 25rem;
+    width: 100%;
     text-align: center;
     padding: 2rem;
   }
 
   .slideshow_container {
-    // position: relative;
     margin: auto;
     padding-bottom: 2rem;
 
