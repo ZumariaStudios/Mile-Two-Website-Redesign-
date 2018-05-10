@@ -22,6 +22,15 @@ main {
 
 $gradient-transparency: 0.17;
 
+button.contact_button {
+  background-color: $clr-drk-green;
+  border-radius: 8px;
+  color: white;
+  line-height: 0.5;
+  padding: 1.5rem;
+  margin: auto;
+}
+
 .services_sec {
   background-image: linear-gradient(
                 to bottom,
@@ -70,4 +79,23 @@ $gradient-transparency: 0.17;
       justify-content: center;
     }
   }
+}
+
+
+
+.body_wrapper {
+  width: 90%;
+  margin: auto;
+}
+.our_work{
+  h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  h3, p {
+    text-align: left;
+  }
+
 }

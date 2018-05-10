@@ -1,7 +1,9 @@
 footer {
   background-color: $clr-drk-blue;
   padding: 1em;
-
+.wrapper {
+  width: 70%;
+  margin: auto;
   h4 {
     font-family: 'Open sans', sans-serif;
     color: white;
@@ -10,20 +12,43 @@ footer {
     font-weight: lighter;
   }
 
+  
   .logo {
-    margin: auto;
-    width: 90%;
+
+    .M2_svg {
+      fill: $clr-drk-green;
+      width: 100%;
+    }
   }
 
- .fIcons {
-   width: 55%;
-   margin: auto;
-  .fa {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 40px;
-    height: 40px;
+  .fIcons {
+    width: 80%;
+    margin: auto;
+
+
+    .fa {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+    }
+
+    svg {
+      fill: $clr-light-blue;
+
+    }
   }
+
+  @include media($tablet) {
+   h4{
+    text-align: left;
+  }
+  }
+  @include media($desktop) {
+    h4 {
+    text-align: left;
+  }
+  }
+
+
 }
 }
