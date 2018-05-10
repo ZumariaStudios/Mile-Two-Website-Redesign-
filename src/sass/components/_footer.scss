@@ -1,19 +1,29 @@
-
 footer {
-  font-family: 'Open sans', sans-serif;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  margin: auto;
-    background-color: $clr-drk-blue;
+  background-color: $clr-drk-blue;
+  padding: 1em;
+
+  h4 {
+    font-family: 'Open sans', sans-serif;
     color: white;
     text-align: center;
-    font-family: 'Open sans', sans-serif;
+    font-size: 12pt;
+    font-weight: lighter;
+  }
 
-svg {
-width: 2em;
-fill: pink;
-padding: .3em;
+  .logo {
+    margin: auto;
+    width: 90%;
+  }
+
+ .fIcons {
+   width: 55%;
+   margin: auto;
+  .fa {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 40px;
+    height: 40px;
+  }
 }
-
 }
