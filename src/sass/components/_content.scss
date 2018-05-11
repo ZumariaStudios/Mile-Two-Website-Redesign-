@@ -78,6 +78,7 @@ $gradient-transparency: 0.17; //Services
       padding: 0.7em;
       margin: auto;
       text-align: left;
+      position: relative;
     }
 
     h1 {
@@ -135,6 +136,37 @@ $gradient-transparency: 0.17; //Services
         position: relative;
       }
     }
+    .img_group3 {
+      width: 100%;
+
+      .right_5{
+        margin-left: 4.5em;
+      }
+
+      .left_6{
+        margin-left: -3.5em;
+        height: 200px;
+      }
+
+      .right_7 {
+        margin-left: -5em;
+        margin-top: 1.5em;
+        height: 120px;
+        position: absolute;
+      }
+      img {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: -1.5em;
+
+      }
+
+
+    }
+
+
+
   }
   //End Our Work
   //Begin Our Team
