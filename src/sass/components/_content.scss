@@ -19,9 +19,8 @@ main {
   }
 }
 //Index Page Styles
-$gradient-transparency: 0.17;
+$gradient-transparency: 0.17; //Services
 
-//Services
 .services_sec {
   background-image: linear-gradient(to bottom, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%), url("img/services_bkg.png");
   background-size: cover;
@@ -67,11 +66,19 @@ $gradient-transparency: 0.17;
 }
 //End Services
 //Begin Our Work
+
 .body_wrapper {
   width: 100%;
 
   .our_work {
     padding: 1em;
+
+    h3,
+    p {
+      padding: 0.7em;
+      margin: auto;
+      text-align: left;
+    }
 
     h1 {
       font-weight: bolder;
@@ -79,42 +86,58 @@ $gradient-transparency: 0.17;
       margin-top: 0;
     }
 
-  svg {
-    margin: -4.2em 0 0 -1em;
-    max-width: 70%;
-    height: auto;
-  }
-
-
- .project1_img_group{
-   display: flex;
-   flex-wrap: nowrap;
-   width: 100%;
-
-    img {
-      max-height: 300px;
-      width: auto;
-      margin:0 0 0 5em;
-      z-index: 4;
+    svg.top {
+      margin: -4.2em 0 0 -1em;
+      max-width: 70%;
+      height: auto;
     }
-    svg {
+
+    .img_group1 {
+      display: flex;
+      flex-wrap: nowrap;
       width: 100%;
-      z-index: 2;
-      margin-top: 1em;
-      margin-right: -1.4em;
+
+      img {
+        max-height: 300px;
+        width: auto;
+        margin: 0 0 0 5em;
+        z-index: 4;
+      }
+
+      svg {
+        width: 100%;
+        z-index: 2;
+        margin-top: 1em;
+        margin-right: -1.4em;
+      }
     }
 
-}
-    h3,
-    p {
-      text-align: left;
+    .img_group2 {
+      width: 100%;
+
+      .left {
+        margin-left: -1em;
+        height: 250px;
+        margin-top: -2em;
+      }
+      .right {
+        height: 300px;
+        margin-top: 9em;
+        position: absolute;
+        margin-left: -8em;
+        z-index: 1;
+      }
+      img {
+        width: 100%;
+        margin-left: -2em;
+        margin-top: 5.5em;
+        z-index: 3;
+        position: relative;
+      }
     }
   }
-
-
-//End Our Work
-//Begin Our Team
-
+  //End Our Work
+  //Begin Our Team
   .team_sec {
     padding: 1em;
 
@@ -126,8 +149,19 @@ $gradient-transparency: 0.17;
 
     svg {
       display: flex;
-      margin: 1.5em 0 -2.1em 4.2em;
+      margin: 1.5em 0 -2.1em 4em;
       width: 275px;
+    }
+
+    button.contact_button {
+      background-color: $clr-drk-green;
+      border-radius: 8px;
+      color: white;
+      line-height: 0.5;
+      margin: auto;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
     }
   }
 }
