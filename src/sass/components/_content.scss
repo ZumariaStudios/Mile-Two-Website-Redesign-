@@ -5,17 +5,18 @@ main {
 }
 
 .content {
-    // margin: 0 auto;
-    // max-width: $desktop-width;
+    background: $clr-gray-95;
 
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+     p {
         font-family: 'Open sans', sans-serif;
     }
+
 }
 
 //Index Page Styles
@@ -28,7 +29,8 @@ button.contact_button {
   color: white;
   line-height: 0.5;
   padding: 1.5rem;
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .services_sec {
@@ -81,13 +83,11 @@ button.contact_button {
   }
 }
 
-
-
 .body_wrapper {
-  width: 90%;
-  margin: auto;
-}
+  width: 100%;
+
 .our_work{
+  padding: 1em;
   h1 {
     font-size: 3rem;
     font-weight: bolder;
@@ -98,4 +98,27 @@ button.contact_button {
     text-align: left;
   }
 
+}
+
+.team_sec{
+  padding: 1em;
+
+.contact_button{
+  margin: auto;
+
+}
+
+h1{
+  text-align: center;
+  justify-content: center;
+}
+.lowest_Crystal {
+width: 100%;
+float: right;
+margin-right: -3em;
+margin-bottom: -1.2em;
+    background: $clr-gray-95;
+    z-index: -5;
+}
+}
 }
