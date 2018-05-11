@@ -161,9 +161,33 @@ $gradient-transparency: 0.17; //Services
         margin-top: -1.5em;
 
       }
-
-
     }
+      .img_group4 {
+        .left_8 {
+          margin-left: -3.8em;
+        }
+        .center_9{
+          width: 150px;
+          margin-top: 1em;
+          display: flex;
+          margin-left: 6em;
+          z-index: 1;
+        }
+        .right_10{
+          margin-left: 8.2em;
+          margin-top: -6em;
+          z-index: 4;
+          position: absolute;
+        }
+
+        img {
+          z-index: 2;
+          margin-top: -2em;
+        }
+
+      }
+
+
 
 
 
@@ -177,6 +201,7 @@ $gradient-transparency: 0.17; //Services
       text-align: center;
       justify-content: center;
       font-weight: bold;
+      position: relative;
     }
 
     svg {
