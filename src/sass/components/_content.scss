@@ -1,26 +1,24 @@
 //Base Styles
+
 main {
-    background: $clr-gray-95;
-    color: $clr-gray-15;
+  background: $clr-gray-95;
+  color: $clr-gray-15;
 }
 
 .content {
-    background: $clr-gray-95;
+  background: $clr-gray-95;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-     p {
-        font-family: 'Open sans', sans-serif;
-    }
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-family: 'Open sans', sans-serif;
+  }
 }
-
 //Index Page Styles
-
 $gradient-transparency: 0.17;
 
 button.contact_button {
@@ -28,17 +26,14 @@ button.contact_button {
   border-radius: 8px;
   color: white;
   line-height: 0.5;
+  margin: auto;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
 }
 
 .services_sec {
-  background-image: linear-gradient(
-                to bottom,
-                transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%,
-                transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%
-                ), url("img/services_bkg.png");
+  background-image: linear-gradient(to bottom, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%), url("img/services_bkg.png");
   background-size: cover;
 
   h1.serv_h1 {
@@ -51,10 +46,10 @@ button.contact_button {
   }
 
   h2.serv_h2 {
-  color: $clr-light-green;
-  margin: auto;
-  padding: 0.5em;
-  text-align: center;
+    color: $clr-light-green;
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
   }
 
   p.serv_p {
@@ -68,13 +63,11 @@ button.contact_button {
   .slideshow_container {
     margin: auto;
     padding-bottom: 2rem;
-
     @include media($tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
-
     @include media($desktop) {
       display: flex;
       flex-wrap: wrap;
@@ -86,39 +79,34 @@ button.contact_button {
 .body_wrapper {
   width: 100%;
 
-.our_work{
-  padding: 1em;
-  h1 {
-    font-size: 3rem;
-    font-weight: bolder;
-    text-align: center;
+  .our_work {
+    padding: 1em;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    h3,
+    p {
+      text-align: left;
+    }
   }
 
-  h3, p {
-    text-align: left;
+  .team_sec {
+    padding: 1em;
+
+    h1 {
+      text-align: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    svg {
+      display: flex;
+      margin: 1.5em 0 -2.1em 4.2em;
+      width: 275px;
+    }
   }
-
-}
-
-.team_sec{
-  padding: 1em;
-
-.contact_button{
-  margin: auto;
-
-}
-
-h1{
-  text-align: center;
-  justify-content: center;
-}
-.lowest_Crystal {
-width: 100%;
-float: right;
-margin-right: -3em;
-margin-bottom: -1.2em;
-    background: $clr-gray-95;
-    z-index: -5;
-}
-}
 }
