@@ -1,4 +1,4 @@
-//jQuery checker [debug tool]
+// jQuery checker [debug tool]
 // window.onload = function() {
 //     if (window.jQuery) {
 //         // jQuery is loaded
@@ -9,7 +9,7 @@
 //     }
 // }
 
-//slideshow preferences
+slideshow preferences
 $(document).ready(function(){
   $('.slideshow_container').slick({
   swipeToSlide: true,

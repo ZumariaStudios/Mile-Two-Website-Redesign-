@@ -18,184 +18,185 @@ main {
     font-family: 'Open sans', sans-serif;
   }
 }
-//Index Page Styles
-$gradient-transparency: 0.17; //Services
 
-.services_sec {
-  background-image: linear-gradient(to bottom, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%), url("img/services_bkg.png");
-  background-size: cover;
+//Begin Our Work
 
-  h1.serv_h1 {
-    color: white;
-    font-size: 3rem;
-    font-weight: bolder;
-    padding-top: 3rem;
-    text-align: center;
-    margin: auto;
-  }
+.our_work {
+  width: 100%;
+  // padding: 1em;
 
-  h2.serv_h2 {
-    color: $clr-light-green;
-    margin: auto;
-    padding: 0.5em;
-    text-align: center;
-  }
-
-  p.serv_p {
-    color: white;
-    margin: auto;
+  .work_intro {
     width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
+    padding: 1em;
+    margin: 0 0 0 0;
 
-  .slideshow_container {
-    margin: auto;
-    padding-bottom: 2rem;
     @include media($tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      margin: 2rem 0 0 2rem;
+      width: 40%;
     }
     @include media($desktop) {
+      width: 40%;
+    }
+  }
+
+  .svg_grouping {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  h3,
+  p {
+    padding: 0.5em;
+    margin: auto;
+    text-align: left;
+  }
+
+  h1 {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1em;
+  }
+
+  svg.top {
+    height: 148px;
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    // border: 1px solid red;
+  }
+
+  .img_group1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    width: 100%;
+
+    .work_framedImage {
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+      padding: 0;
+      width: 100%;
+
+      @include media($tablet) {
+        justify-content: space-between;
+        width: 60%;
+      }
+      @include media($desktop) {
+        justify-content: space-between;
+        width: 60%;
+      }
+
+      img {
+        max-height: 400px;
+        width: auto;
+        margin: 0 0 0 4em;
+
+        @include media($tablet) {
+          margin: 0 3em 0 3em;
+          max-height: 600px;
+        }
+        @include media($desktop) {
+          margin: 0 3em 0 3em;
+          max-height: 600px;
+        }
+      }
+
+      svg.side_crystal_1 {
+        height: 400px;
+        width: 150px;
+      }
+    }
+  }
+
+  .img_group2 {
+    width: 100%;
+
+    svg.left {
+      height: 150px;
+      width: 218px;
+    }
+
+    svg.right {
+      height: 150px;
+      width: 92px;
+    }
+
+    img {
+      margin: 0;
+      padding: 0;
+      width: 90%;
+
+      @include media($tablet) {
+        width: 70%;
+      }
+      @include media($desktop) {
+        width: 70%;
+      }
+    }
+  }
+
+  .img_group3 {
+    width: 100%;
+
+    .right_5{
+      height: 150px;
+      width: 247px;
+    }
+
+    .left_6{
+      height: 200px;
+      width: 202px;
+    }
+
+    .work_framedImage3 {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      margin: 0;
+      justify-content: space-between;
+      padding: 0;
+      width: 100%;
+
+      img {
+        width: 100%;
+        margin: auto;
+        @include media($tablet) {
+          width: 50%;
+        }
+        @include media($desktop) {
+          width: 50%;
+        }
+      }
     }
   }
 }
-//End Services
-//Begin Our Work
 
-.body_wrapper {
+//team css
+
+.team_gallery {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 
-  .our_work {
-    padding: 1em;
-
-    h3,
-    p {
-      padding: 0.7em;
-      margin: auto;
-      text-align: left;
-      position: relative;
+    .left_8 {
+      height: 150px;
+      width: 185px;
     }
 
-    h1 {
-      font-weight: bolder;
-      text-align: center;
-      margin-top: 0;
+    .right_10{
+      height: 150px;
+      width: 98px;
     }
+}
 
-    svg.top {
-      margin: -4.2em 0 0 -1em;
-      max-width: 70%;
-      height: auto;
-    }
-
-    .img_group1 {
-      display: flex;
-      flex-wrap: nowrap;
-      width: 100%;
-
-      img {
-        max-height: 300px;
-        width: auto;
-        margin: 0 0 0 5em;
-        z-index: 4;
-      }
-
-      svg {
-        width: 100%;
-        z-index: 2;
-        margin-top: 1em;
-        margin-right: -1.4em;
-      }
-    }
-
-    .img_group2 {
-      width: 100%;
-
-      .left {
-        margin-left: -1em;
-        height: 250px;
-        margin-top: -2em;
-      }
-      .right {
-        height: 300px;
-        margin-top: 9em;
-        position: absolute;
-        margin-left: -8em;
-        z-index: 1;
-      }
-      img {
-        width: 100%;
-        margin-left: -2em;
-        margin-top: 5.5em;
-        z-index: 3;
-        position: relative;
-      }
-    }
-    .img_group3 {
-      width: 100%;
-
-      .right_5{
-        margin-left: 4.5em;
-      }
-
-      .left_6{
-        margin-left: -3.5em;
-        height: 200px;
-      }
-
-      .right_7 {
-        margin-left: -5em;
-        margin-top: 1.5em;
-        height: 120px;
-        position: absolute;
-      }
-      img {
-        display: flex;
-        width: 90%;
-        margin: auto;
-        margin-top: -1.5em;
-
-      }
-    }
-      .img_group4 {
-        .left_8 {
-          margin-left: -3.8em;
-        }
-        .center_9{
-          width: 150px;
-          margin-top: 1em;
-          display: flex;
-          margin-left: 6em;
-          z-index: 1;
-        }
-        .right_10{
-          margin-left: 8.2em;
-          margin-top: -6em;
-          z-index: 4;
-          position: absolute;
-        }
-
-        img {
-          z-index: 2;
-          margin-top: -2em;
-        }
-
-      }
-
-
-
-
-
-  }
-  //End Our Work
-  //Begin Our Team
+.meet_the_team {
+display: flex;
+align-items: flex-end;
   .team_sec {
-    padding: 1em;
 
     h1 {
       text-align: center;
@@ -205,8 +206,7 @@ $gradient-transparency: 0.17; //Services
     }
 
     svg {
-      display: flex;
-      margin: 1.5em 0 -2.1em 4em;
+      height: 108px;
       width: 275px;
     }
 
