@@ -1,0 +1,54 @@
+$gradient-transparency: 0.17;
+
+.services_sec {
+  background-image: linear-gradient(to bottom, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%), url("img/services_bkg.png");
+  background-size: cover;
+
+  h1.serv_h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-top: 3rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  h2.serv_h2 {
+    color: $clr-light-green;
+    margin: auto;
+    padding: 0.8em;
+    text-align: center;
+  }
+
+  p.serv_p {
+    color: white;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+
+    @include media($tablet) {
+      padding: 2rem;
+      width: 30rem;
+    }
+    @include media($desktop) {
+      padding: 2rem;
+      width: 30rem;
+    }
+  }
+
+  .slideshow_container {
+    margin: auto;
+    padding-bottom: 2rem;
+    @include media($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include media($desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
