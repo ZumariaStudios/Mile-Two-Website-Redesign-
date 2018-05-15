@@ -64,6 +64,20 @@ align-items: flex-end;
   animation: none;
 }
 
+.animation-element {
+  animation: slide-in 3s ease forwards;
+  animation-delay: 2s;
+  transform: translateY(150px);
+  opacity: 0;
+}
+
 @keyframes come-in {
   to { transform: translateY(0); }
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateY(0);
+    opacity: 1
+  }
 }
