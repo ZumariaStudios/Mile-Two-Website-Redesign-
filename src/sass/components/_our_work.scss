@@ -37,14 +37,6 @@
     padding-top: 1em;
   }
 
-  svg.top {
-    height: 148px;
-    margin: 0;
-    padding: 0;
-    width: 375px;
-    // border: 1px solid red;
-  }
-
   .img_group1 {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -137,7 +129,7 @@
       padding: 0;
       width: 100%;
 
-      img {  
+      img {
         width: 100%;
         margin: auto;
         @include media($tablet) {
