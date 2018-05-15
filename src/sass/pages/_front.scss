@@ -1,0 +1,14 @@
+
+.front__sections {
+    @include outer-container(100%);
+
+    .front__section {
+        @include span-columns(12);
+        padding: 0;
+
+        @include media($desktop) {
+            @include span-columns(4);
+        }
+
+    }
+}

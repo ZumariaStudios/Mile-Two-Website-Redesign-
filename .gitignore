@@ -67,3 +67,5 @@ src/_includes/styles*
 src/fonts/fontawesome*
 src/fonts/FontAwesome*
 public
+package-lock.json
+
