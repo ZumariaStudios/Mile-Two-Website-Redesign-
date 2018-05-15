@@ -1,55 +1,31 @@
 footer {
-  clear:both;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: $clr-drk-blue;
   padding: 1em;
-.wrapper {
-  width: 70%;
-  margin: auto;
-  h4 {
-    font-family: 'Open sans', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 12pt;
-    font-weight: lighter;
-  }
-
+  color: white;
 
   .logo {
-
     .M2_svg {
       fill: $clr-drk-green;
       width: 100%;
+
+      .M2M2_Backdrop {
+        fill: $clr-drk-blue;
+      }
     }
   }
 
   .fIcons {
-    width: 80%;
+    display: inline-flex;
+    max-width: 25%;
+    max-height: 25%;
     margin: auto;
-
-
-    .fa {
-      display: inline-flex;
-      width: 40px;
-      height: 40px;
-    }
 
     svg {
       fill: $clr-light-blue;
-
     }
   }
-
-  @include media($tablet) {
-   h4{
-    text-align: left;
-  }
-  }
-  @include media($desktop) {
-    h4 {
-    text-align: left;
-  }
-  }
-
-
-}
 }
