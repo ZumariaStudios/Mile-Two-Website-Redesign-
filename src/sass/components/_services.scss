@@ -51,4 +51,11 @@ $gradient-transparency: 0.17;
       justify-content: center;
     }
   }
+
+  .slick-slide {
+    &:focus {
+      outline: none;
+    }
+  }
+
 }
