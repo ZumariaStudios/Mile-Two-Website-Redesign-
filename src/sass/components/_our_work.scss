@@ -1,0 +1,170 @@
+.our_work {
+  width: 100%;
+
+  .work_intro {
+    width: 100%;
+    padding: 1em;
+    margin: 0 0 0 0;
+
+    @include media($tablet) {
+      margin: 2rem 0 0 2rem;
+      width: 40%;
+    }
+    @include media($desktop) {
+      width: 40%;
+    }
+  }
+
+  .svg_grouping {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  h3,
+  p {
+    padding: 0.5em;
+    margin: auto;
+    text-align: left;
+  }
+
+  h1 {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1em;
+  }
+
+  svg.top {
+    height: 148px;
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    // border: 1px solid red;
+  }
+
+  .img_group1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    width: 100%;
+
+    .work_framedImage {
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+      padding: 0;
+      width: 100%;
+
+      @include media($tablet) {
+        justify-content: space-between;
+        width: 60%;
+      }
+      @include media($desktop) {
+        justify-content: space-between;
+        width: 60%;
+      }
+
+      img {
+        max-height: 400px;
+        width: auto;
+        margin: 0 0 0 4em;
+
+        @include media($tablet) {
+          margin: 0 3em 0 3em;
+          max-height: 600px;
+        }
+        @include media($desktop) {
+          margin: 0 3em 0 3em;
+          max-height: 600px;
+        }
+      }
+
+      svg.side_crystal_1 {
+        height: 400px;
+        width: 150px;
+      }
+    }
+  }
+
+  .img_group2 {
+    width: 100%;
+
+    svg.left {
+      height: 150px;
+      width: 218px;
+    }
+
+    svg.right {
+      height: 150px;
+      width: 92px;
+    }
+
+    img {
+      margin: 0;
+      padding: 0;
+      width: 90%;
+
+      @include media($tablet) {
+        width: 70%;
+      }
+      @include media($desktop) {
+        width: 70%;
+      }
+    }
+  }
+
+  .img_group3 {
+    width: 100%;
+
+    .right_5{
+      height: 150px;
+      width: 247px;
+    }
+
+    .left_6{
+      height: 200px;
+      width: 202px;
+    }
+
+    .work_framedImage3 {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      justify-content: space-between;
+      padding: 0;
+      width: 100%;
+
+      img {
+        width: 100%;
+        margin: auto;
+        @include media($tablet) {
+          width: 50%;
+        }
+        @include media($desktop) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+//team css
+
+.team_gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+    .left_8 {
+      height: 150px;
+      width: 185px;
+    }
+
+    .right_10{
+      height: 150px;
+      width: 98px;
+    }
+}

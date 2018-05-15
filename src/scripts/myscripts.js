@@ -1,13 +1,54 @@
-// jQuery checker [debug tool]
-// window.onload = function() {
-//     if (window.jQuery) {
-//         // jQuery is loaded
-//         alert("Yeah!");
-//     } else {
-//         // jQuery is not loaded
-//         alert("Doesn't Work");
-//     }
-// }
+jQuery checker [debug tool]
+window.onload = function() {
+    if (window.jQuery) {
+        // jQuery is loaded
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
+
+(function($) {
+
+  $.fn.visible = function(partial) {
+
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".module");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+});
+
+win.scroll(function(event) {
+
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in");
+    }
+  });
+
+});
 
 slideshow preferences
 $(document).ready(function(){
