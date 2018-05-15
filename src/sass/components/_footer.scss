@@ -1,4 +1,5 @@
 footer {
+  width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -6,15 +7,20 @@ footer {
   background-color: $clr-drk-blue;
   padding: 1em;
   color: white;
+  text-align: center;
+
+.wrapper {
+ max-width: 80%;
+ margin: auto;
+ h4 {
+   margin: auto;
+ }
 
   .logo {
     .M2_svg {
       fill: $clr-drk-green;
       width: 100%;
 
-      .M2M2_Backdrop {
-        fill: $clr-drk-blue;
-      }
     }
   }
 
@@ -28,4 +34,5 @@ footer {
       fill: $clr-light-blue;
     }
   }
+}
 }
