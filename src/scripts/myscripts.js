@@ -9,11 +9,27 @@
 //     }
 // }
 
-// slideshow preferences
+// slideshow preferences in services
 $(document).ready(function(){
   $('.slideshow_container').slick({
   swipeToSlide: true,
   arrows: false,
+  dots: true,
+  });
+});
+
+// slideshow preferences in meet the team
+$(document).ready(function(){
+  $('.slider').slick({
+    infinite: true,
+    centerMode: true,
+    dots: true,
+    variableWidth: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    swipeToSlide: true,
+    arrows: false,
   });
 });
 

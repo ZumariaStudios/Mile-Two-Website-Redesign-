@@ -7,7 +7,6 @@ $gradient-transparency: 0.17;
   h1.serv_h1 {
     color: white;
     font-size: 3rem;
-    font-weight: bolder;
     padding-top: 3rem;
     text-align: center;
     margin: auto;
@@ -38,8 +37,12 @@ $gradient-transparency: 0.17;
   }
 
   .slideshow_container {
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     padding-bottom: 2rem;
+    justify-content: center;
+
     @include media($tablet) {
       display: flex;
       flex-wrap: wrap;
@@ -51,11 +54,4 @@ $gradient-transparency: 0.17;
       justify-content: center;
     }
   }
-
-  .slick-slide {
-    &:focus {
-      outline: none;
-    }
-  }
-
 }

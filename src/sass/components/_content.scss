@@ -5,47 +5,23 @@ main {
   color: $clr-gray-15;
 }
 
-.content {
-  background: $clr-gray-95;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    font-family: 'Open sans', sans-serif;
+.slick-slide {
+  &:focus {
+    outline: none;
   }
 }
 
-.meet_the_team {
-display: flex;
-align-items: flex-end;
-  .team_sec {
+.slick-dots {
+  color: $clr-gray-15;
+  display: flex;
+  margin: auto;
 
-    h1 {
-      text-align: center;
-      justify-content: center;
-      font-weight: bold;
-      position: relative;
-    }
+  button {
+    opacity: 0;
+  }
 
-    svg {
-      height: 108px;
-      width: 275px;
-    }
-
-    button.contact_button {
-      background-color: $clr-drk-green;
-      border-radius: 8px;
-      color: white;
-      line-height: 0.5;
-      margin: auto;
-      padding: 1.5rem;
-      display: flex;
-      justify-content: center;
-    }
+  .slick-active {
+    color: $clr-gray-90;
   }
 }
 
