@@ -1,6 +1,15 @@
 .our_work {
   width: 100%;
 
+  .backgroundSVG {
+    position: absolute;
+    margin: 0;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
   .work_intro {
     width: 100%;
     padding: 1em;
