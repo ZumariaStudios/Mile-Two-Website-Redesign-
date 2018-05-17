@@ -11,12 +11,6 @@ main {
   }
 }
 
-<<<<<<< HEAD
-.meet_the_team {
-display: flex;
-align-items: flex-end;
-  .team_sec {
-=======
 .slick-dots {
   color: $clr-gray-15;
   display: flex;
@@ -45,7 +39,6 @@ align-items: flex-end;
   transform: translateY(0);
   animation: none;
 }
->>>>>>> 39d3d77d100f0f4df052eee482244bce898c05d1
 
 .animation-element {
   animation: slide-in 3s ease forwards;
@@ -54,16 +47,9 @@ align-items: flex-end;
   opacity: 0;
 }
 
-<<<<<<< HEAD
-    svg {
-      height: 108px;
-      width: 275px;
-    }
-=======
 @keyframes come-in {
   to { transform: translateY(0); }
 }
->>>>>>> 39d3d77d100f0f4df052eee482244bce898c05d1
 
 @keyframes slide-in {
   to {
@@ -90,4 +76,3 @@ align-items: flex-end;
 @keyframes come-in {
   to { transform: translateY(0); }
 }
-  
