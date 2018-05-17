@@ -5,47 +5,70 @@ main {
   color: $clr-gray-15;
 }
 
-.content {
-  background: $clr-gray-95;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    font-family: 'Open sans', sans-serif;
+.slick-slide {
+  &:focus {
+    outline: none;
   }
 }
 
+<<<<<<< HEAD
 .meet_the_team {
 display: flex;
 align-items: flex-end;
   .team_sec {
+=======
+.slick-dots {
+  color: $clr-gray-15;
+  display: flex;
+  margin: auto;
 
-    h1 {
-      text-align: center;
-      justify-content: center;
-      font-weight: bold;
-      position: relative;
-    }
+  button {
+    opacity: 0;
+  }
 
+  .slick-active {
+    color: $clr-gray-90;
+  }
+}
+
+//come in animation
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+>>>>>>> 39d3d77d100f0f4df052eee482244bce898c05d1
+
+.animation-element {
+  animation: slide-in 3s ease forwards;
+  animation-delay: 2s;
+  transform: translateY(150px);
+  opacity: 0;
+}
+
+<<<<<<< HEAD
     svg {
       height: 108px;
       width: 275px;
     }
+=======
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+>>>>>>> 39d3d77d100f0f4df052eee482244bce898c05d1
 
-    button.contact_button {
-      background-color: $clr-drk-green;
-      border-radius: 8px;
-      color: white;
-      line-height: 0.5;
-      margin: auto;
-      padding: 1.5rem;
-      display: flex;
-      justify-content: center;
-    }
+@keyframes slide-in {
+  to {
+    transform: translateY(0);
+    opacity: 1
   }
 }
 

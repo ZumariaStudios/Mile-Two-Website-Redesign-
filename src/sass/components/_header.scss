@@ -72,16 +72,16 @@ header {
       animation: slideInMobile 1s forwards;
       display: flex;
       flex-wrap: wrap;
-      margin: 0 0 2rem 4rem;
+      margin: 0 0 0 4rem;
 
       @include media($tablet) {
         animation: slideInDesktop 1s forwards;
-        margin: -15rem 0 2rem 14rem;
+        margin: -15rem 0 0 14rem;
       }
 
       @include media($desktop) {
         animation: slideInDesktop 1s forwards;
-        margin: -15rem 0 2rem 14rem;
+        margin: -15rem 0 0 14rem;
         width: 40%;
       }
 

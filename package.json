@@ -63,7 +63,10 @@
     ]
   },
   "dependencies": {
+<<<<<<< HEAD
     "jquery": "^3.3.1",
+=======
+>>>>>>> 39d3d77d100f0f4df052eee482244bce898c05d1
     "scrollreveal": "^3.4.0",
     "slick-carousel": "^1.8.1"
   }

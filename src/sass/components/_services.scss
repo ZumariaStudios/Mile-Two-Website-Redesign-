@@ -7,7 +7,10 @@ $gradient-transparency: 0.17;
   h1.serv_h1 {
     color: white;
     font-size: 3rem;
+<<<<<<< HEAD
     font-weight: bolder;
+=======
+>>>>>>> 39d3d77d100f0f4df052eee482244bce898c05d1
     padding-top: 3rem;
     text-align: center;
     margin: auto;
@@ -38,8 +41,17 @@ $gradient-transparency: 0.17;
   }
 
   .slideshow_container {
+<<<<<<< HEAD
     margin: auto;
     padding-bottom: 2rem;
+=======
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-bottom: 2rem;
+    justify-content: center;
+
+>>>>>>> 39d3d77d100f0f4df052eee482244bce898c05d1
     @include media($tablet) {
       display: flex;
       flex-wrap: wrap;
