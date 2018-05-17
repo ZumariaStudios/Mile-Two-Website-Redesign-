@@ -1,0 +1,35 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+  .intro {
+    width: 100%;
+    text-align: left;
+    background-color: $clr-drk-green;
+    color: $clr-white;
+    text-align: center;
+    padding: 1em;
+  }
+  .body {
+    .project {
+      padding: 1.3em;
+      display: inline-flex;
+      h2 {
+      border: 1px solid pink;
+      }
+      p {
+        border: 1px solid red;
+      }
+      svg {
+        border: 1px solid pink;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+
+}
