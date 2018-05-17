@@ -17,14 +17,14 @@
   .manifesto {
     background-color: $clr-drk-green;
     color: $clr-white;
-    padding: 1em;
+    padding: 2.5em;
   }
-}
+
 
 .our_team {
   width: 100%;
   padding: 1em;
-  margin: 0 0 0 0;
+  margin: 5em 0 0 0;
   position: relative;
   text-align: center;
 
@@ -33,23 +33,16 @@
     flex-wrap: wrap;
     margin: auto;
     width: 100%;
-    @include media($tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: auto;
-      justify-content: center;
-      .slide {
-        max-width: 30%;
-      }
-    }
-    @include media($desktop) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: auto;
-      justify-content: center;
-    }
+    @include media($tablet) {    }
+    @include media($desktop) {  }
+}
 
-  }
+.benefits, .join{
+  max-width: 60%;
+  margin: auto;
+  padding: 15em 0 6.8em 0;
+}
+
 
   button.contact_button {
     background-color: $clr-drk-green;
@@ -62,4 +55,5 @@
     justify-content: center;
   }
 
+}
 }
