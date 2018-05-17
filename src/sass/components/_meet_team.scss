@@ -1,0 +1,65 @@
+.team_background {
+  position: absolute;
+  width: 100%;
+}
+//svg shapes coloring
+.st0{fill:#016848}
+.st1{fill:#d0df63}
+.st2{fill:#c5e8f3}
+.st3{fill:#1a3a44}
+.white {fill: $clr-white;}
+
+
+.content {
+  position: relative;
+  width: 100%;
+
+  .manifesto {
+    background-color: $clr-drk-green;
+    color: $clr-white;
+    padding: 1em;
+  }
+}
+
+.our_team {
+  width: 100%;
+  padding: 1em;
+  margin: 0 0 0 0;
+  position: relative;
+  text-align: center;
+
+  .our_values {
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    @include media($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+      .slide {
+        max-width: 30%;
+      }
+    }
+    @include media($desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+    }
+
+  }
+
+  button.contact_button {
+    background-color: $clr-drk-green;
+    border-radius: 8px;
+    color: white;
+    line-height: 0.5;
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+}

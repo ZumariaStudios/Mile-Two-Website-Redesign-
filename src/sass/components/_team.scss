@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    border: 10px solid red;
 
     @include media($tablet) {
 
