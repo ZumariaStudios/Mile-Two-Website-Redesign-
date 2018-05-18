@@ -14,16 +14,22 @@
   }
   .body {
     .project {
-      padding: 1.3em;
-      display: inline-flex;
-      h2 {
+      border: 1px solid black;
+      position: relative;
+      padding: 0em 1.3em 0em 1.3em;
+      h2,p {
       border: 1px solid pink;
-      }
-      p {
-        border: 1px solid red;
+      margin: 0;
+      width: 75%;
+
       }
       svg {
         border: 1px solid pink;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 25%;
       }
     }
     img {
