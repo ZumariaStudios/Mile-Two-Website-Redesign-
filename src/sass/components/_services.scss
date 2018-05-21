@@ -1,7 +1,7 @@
 $gradient-transparency: 0.17;
 
 .services_sec {
-  background-image: linear-gradient(to bottom, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%), url("img/services_bkg.png");
+  background-image: linear-gradient(to bottom, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 0%, transparentize(saturate($clr-drk-green, 100%), $gradient-transparency) 100%), url("/img/services_bkg.png");
   background-size: cover;
 
   h1.serv_h1 {

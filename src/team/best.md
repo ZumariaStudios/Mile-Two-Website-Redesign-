@@ -1,8 +1,9 @@
 ---
 name: Dave Best
 title: Software Engineer
-image: 
+image:
 linked: true
+layout: person
 ---
 Dave is a professional software engineer and an amateur community organizer. He
 considers himself a full-stack developer, but prefers Python to Javascript. He
