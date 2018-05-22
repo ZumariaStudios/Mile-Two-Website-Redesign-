@@ -1,8 +1,9 @@
-.background {
-  // display: flex;
-  position: absolute;
-  // border: 5px solid pink;
-}
+.content {
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+  }
 
   .services_body {
     max-width: 80%;
@@ -14,9 +15,8 @@
     .processes {
       max-width: 80%;
       margin: auto;
-      text-align:left;
+      text-align: left;
       padding-bottom: 3rem;
-
       @include media($tablet) {
         max-width: 60%;
       }
@@ -39,4 +39,5 @@
     img {
       max-width: 80%;
     }
+  }
 }
