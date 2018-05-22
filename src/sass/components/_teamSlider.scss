@@ -1,6 +1,18 @@
+@keyframes teamNamesAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
 
+.slick-slide {
+  &:focus {
+    outline: none;
+  }
+}
 
 .complete_team {
+  background-color: $clr-white;
+  margin-top: 3rem;
   @include media($tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -14,24 +26,33 @@
     display: flex;
     flex: 1 0 auto;
     height: 100%;
+    padding-left: 2.2rem;
     position: relative;
-    width: 80vh;
+    width: 100vh;
 
     .name_person {
       display: flex;
       align-items: center;
-      top:50%;
+      // margin-right: 6rem;
+      top:30%;
       position: absolute;
-      transform: translateY(-50%);
 
       h3 {
+        transform: translateX(150px);
+        animation: come-in 0.8s ease forwards;
         padding: 0.5em;
       }
 
       .line_person {
+        transform: translateX(150px);
+        animation: come-in 0.8s ease forwards;
         background-color: $clr-drk-blue;
         height: 2px;
         width: 50px;
+      }
+
+      .image_person {
+        // padding-left: 2rem;
       }
     }
   }

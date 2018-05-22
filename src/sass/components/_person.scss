@@ -1,0 +1,100 @@
+.page_person {
+  padding-top: 2rem;
+  // border: 5px solid red;
+
+  .top_area {
+    width: 100%;
+    margin: auto;
+
+    @include media($tablet) {
+      display: flex;
+      width: 70%;
+    }
+    @include media($desktop) {
+      display: flex;
+      width: 70%;
+    }
+  }
+
+  .image_wrap {
+    width: 100%;
+
+    @include media($tablet) {
+      width: 50%;
+    }
+    @include media($desktop) {
+      width: 50%;
+    }
+
+    .person_img {
+      width: 50%;
+      margin: auto;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .person_info {
+    color: $clr-drk-blue;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    width: 100%;
+
+    @include media($tablet) {
+      padding-bottom: 2rem;
+      text-align: right;
+      width: 40%;
+    }
+    @include media($desktop) {
+      padding-bottom: 2rem;
+      text-align: right;
+      width: 40%;
+    }
+
+    .person_name, .person_title{
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+    .person_bio {
+      background-image: url("/img/shapes_pattern.png");
+      background-size: cover;
+      background-color: $clr-drk-green;
+      color: $clr-white;
+      margin: auto;
+      padding: 2em;
+      text-align: center;
+
+      p {
+        width: 100%;
+
+        @include media($tablet) {
+          margin: auto;
+          padding: 2em;
+          width: 60%;
+        }
+        @include media($desktop) {
+          margin: auto;
+          padding: 2em;
+          width: 60%;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        // padding: 0 0.5em 0 0.5em;
+      }
+
+      a {
+        color: $clr-light-green;
+        text-decoration: none;
+      }
+    }
+}

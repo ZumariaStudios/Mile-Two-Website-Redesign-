@@ -1,67 +1,12 @@
-<div>
-  <div class="complete_team sliderTeam">
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>JEFF</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href="" class="image_person"><img src="/img/Jeff.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>JORGE</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/Jorge.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>JAMIE</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/Jamie.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>ALEX</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/AlexM.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>MICHAEL</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/Michael.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>REN</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/Ren.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>JOE</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/Joe.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>BENNET</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/Bennet.png" height=400/></a>
-    </div>
-    <div class="teamMember">
-        <div class="name_person">
-        <h3>KEVIN</h3>
-        <div class="line_person"></div>
-        </div>
-        <a href=""><img src="/img/Kevin.png" height=400/></a>
-    </div>
-  </div>
+<div class="complete_team sliderTeam">
+  {% for teamMember in site.team %}
+      <div class="teamMember">
+          <div class="name_person">
+            <h3>{{teamMember.short_name}}</h3>
+            <div class="line_person"></div>
+          </div>
+          <a href="{{ teamMember.url | relative_url }}" class="image_person">
+            <img src="/img/teamImgs/{{teamMember.image}}" height=400/></a>
+      </div>
+  {% endfor %}
 </div>

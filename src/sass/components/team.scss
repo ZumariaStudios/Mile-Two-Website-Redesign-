@@ -41,9 +41,16 @@
 }
 
 .benefits, .join{
-  max-width: 60%;
+  max-width: 100%;
   margin: auto;
-  padding-top: 5em;
+  padding: 2em;
+
+  @include media($tablet) {
+    max-width: 70%;
+  }
+  @include media($desktop) {
+    max-width: 70%;
+  }
 }
 
 
