@@ -1,0 +1,38 @@
+
+
+.complete_team {
+  @include media($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include media($desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teamMember {
+    display: flex;
+    flex: 1 0 auto;
+    height: 100%;
+    position: relative;
+    width: 80vh;
+
+    .name_person {
+      display: flex;
+      align-items: center;
+      top:50%;
+      position: absolute;
+      transform: translateY(-50%);
+
+      h3 {
+        padding: 0.5em;
+      }
+
+      .line_person {
+        background-color: $clr-drk-blue;
+        height: 2px;
+        width: 50px;
+      }
+    }
+  }
+}

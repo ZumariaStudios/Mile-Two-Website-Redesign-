@@ -1,34 +1,80 @@
 footer {
   background-color: $clr-drk-blue;
-  padding: 1em;
+  padding: 3em;
   color: $clr-white;
-  text-align: left;
+  width: 100%;
 
-  .wrapper {
-    p {
-      max-width: 70%;
+  @include media($tablet) {
+    display:flex;
+    align-items: flex-start;
+    // flex-wrap: wrap-reverse;
+  }
+  @include media($desktop) {
+    display:flex;
+    // flex-wrap: wrap-reverse;
+  }
+
+  .footer_text {
+    padding: 0.2rem;
+    text-align: center;
+
+    @include media($tablet) {
+      text-align: left;
+      width: 100%;
     }
-    position: relative;
+    @include media($desktop) {
+      text-align: left;
+      width: 100%;
+    }
+
+    .copyright {
+     font-size: 0.8rem;
+    }
+  }
+
+  .logo {
     width: 100%;
-    .logo {
-      display: flex;
-      position: absolute;
-      max-width: 30%;
-      right: 0;
-      top: 0;
-      svg {
-        fill: $clr-white;
+
+    @include media($tablet) {
+      width: 40%;
+    }
+    @include media($desktop) {
+      width: 70%;
+    }
+
+    svg {
+      fill: $clr-white;
+      margin-left: 3.8rem;
+
+      @include media($tablet) {
+        margin-left: -1rem;
+        margin-top: 1rem;
+      }
+      @include media($desktop) {
+        margin-left: 0;
+        margin-top: 1rem;
       }
     }
-    .fIcons {
-      a.fa svg {
-        //Sprite Icons
-        fill: $clr-white;
-        width: 50px;
-        height: 50px;
-        margin: auto;
-        padding-right: 0.5em;
-      }
+  }
+
+  .fIcons {
+    display: flex;
+    justify-content: center;
+
+    @include media($tablet) {
+      justify-content: left;
+    }
+    @include media($desktop) {
+      justify-content: left;
+    }
+
+    a.fa svg {
+      //Sprite Icons
+      fill: $clr-white;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      padding: 0.5em;
     }
   }
 }

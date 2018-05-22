@@ -26,10 +26,14 @@
   .team_title {
     padding: 2em;
 
-    h1 {
-      text-align: center;
-      justify-content: center;
-      position: relative;
+    .meet_the_team {
+      text-decoration: none;
+      h1 {
+        color: $clr-drk-blue;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
     }
 
     button.contact_button {

@@ -2,29 +2,28 @@
   position: absolute;
   width: 100%;
 }
-//svg shapes coloring
-.st0{fill:#016848}
-.st1{fill:#d0df63}
-.st2{fill:#c5e8f3}
-.st3{fill:#1a3a44}
-.white {fill: $clr-white;}
 
+@mixin backImage($imagePath) {
+  background-image: url($imagePath);
+  background-size: cover;
+}
 
 .content {
   position: relative;
   width: 100%;
 
   .manifesto {
+    @include backImage("/img/shapes_pattern.png");
     background-color: $clr-drk-green;
     color: $clr-white;
     padding: 2.5em;
   }
 
 
-.our_team {
+.team_info {
   width: 100%;
   padding: 1em;
-  margin: 5em 0 0 0;
+  margin: 1em 0 3em 0;
   position: relative;
   text-align: center;
 
@@ -32,15 +31,19 @@
     display:flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 100%;
-    @include media($tablet) {    }
-    @include media($desktop) {  }
+    width: 80%;
+    @include media($tablet) {
+      width: 60%;
+    }
+    @include media($desktop) {
+       width: 40%;
+    }
 }
 
 .benefits, .join{
   max-width: 60%;
   margin: auto;
-  padding: 15em 0 6.8em 0;
+  padding-top: 5em;
 }
 
 

@@ -1,5 +1,26 @@
 // Header component on the front page
 
+.box-shadow-menu-wrap {
+  height: 5rem;
+
+  .box-shadow-menu {
+    margin: 3rem 3rem 0 0;
+    position: relative;
+  }
+  .box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1.2em;
+    height: 0.08em;
+    background: black;
+    box-shadow:
+      0 0.25em 0 0 black,
+      0 0.5em 0 0 black;
+  }
+}
+
 @keyframes showup {
     0% {opacity:0;}
     20% {opacity:0;}
@@ -29,14 +50,14 @@
   background-size: cover;
 }
 header {
-    @include backImage("img/Mobile_header_structure.png");
+    @include backImage("/img/Mobile_header_structure.png");
 
     @include media($tablet) {
-        @include backImage("img/Desktop_header_structure.png");
+        @include backImage("/img/Desktop_header_structure.png");
     }
 
     @include media($desktop) {
-        @include backImage("img/Desktop_header_structure.png");
+        @include backImage("/img/Desktop_header_structure.png");
     }
 
     .logo {
@@ -48,23 +69,6 @@ header {
         fill: $clr-drk-green;
         margin: 3rem 0 0 3rem;
         width: 9rem;
-      }
-
-      .box-shadow-menu {
-        margin: 3rem 3rem 0 0;
-        position: relative;
-      }
-      .box-shadow-menu:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0.25em;
-        width: 1.2em;
-        height: 0.08em;
-        background: black;
-        box-shadow:
-          0 0.25em 0 0 black,
-          0 0.5em 0 0 black;
       }
     }
 
@@ -91,6 +95,7 @@ header {
         font-weight: bolder;
         line-height: 1.15;
         margin-bottom: 2rem;
+        width: 100%;
       }
 
       button.header_button {

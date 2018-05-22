@@ -1,10 +1,10 @@
 <header>
     <div class="logo">
-        <a class="M2_Logo" href="#M2Logo"><svg class="M2_svg"><use xlink:href="#M2Logo"></use></svg></a>
-        <a class="box-shadow-menu" href="/navigation.html"></a>
+        <a class="M2_Logo" href="/index.html"><svg class="M2_svg"><use xlink:href="#M2Logo"></use></svg></a>
+        <a class="box-shadow-menu-wrap" href="/navigation.html"><div class="box-shadow-menu"></div></a>
     </div>
     <div class="header_Info">
-      <h1 class="slogan">We create possibilities through technology.</h1>
+      <h1 class="slogan">{% if page.slogan %}{{ page.slogan }}{% else %}{{ site.slogan }}{% endif %}</h1>
       <button class="header_button">CONTACT US</button>
     <div>
 </header>
