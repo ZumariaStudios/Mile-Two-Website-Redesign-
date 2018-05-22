@@ -5,11 +5,15 @@
   text-align: left;
   justify-content: space-between;
   .intro {
+    position: relative;
     width: 100%;
     text-align: left;
     color: $clr-white;
     text-align: center;
     padding: 1em;
+   background-color: $clr-drk-green;
+    background-image: url("/img/shapes_pattern.png");
+
   }
   .body {
     width:100%;
