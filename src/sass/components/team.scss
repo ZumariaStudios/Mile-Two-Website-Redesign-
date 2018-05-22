@@ -1,7 +1,4 @@
-.team_background {
-  position: absolute;
-  width: 100%;
-}
+
 
 @mixin backImage($imagePath) {
   background-image: url($imagePath);
@@ -10,7 +7,14 @@
 
 .content {
   position: relative;
-  width: 100%;
+  overflow: hidden;
+
+  .team_background {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+  }
 
   .manifesto {
     @include backImage("/img/shapes_pattern.png");
