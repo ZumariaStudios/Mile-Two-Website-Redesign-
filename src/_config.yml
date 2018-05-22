@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Mile Two
+slogan: We create possibilities through technology.
 email: info@miletwo.us
 description: >- # this means to ignore newlines until "baseurl:"
   Mile Two Website

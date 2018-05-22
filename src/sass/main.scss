@@ -18,13 +18,16 @@
 @import 'components/content';
 @import 'components/footer';
 @import 'components/header';
-@import 'components/services';
-@import 'components/work';
+@import 'components/servicesComp';
+@import 'components/workComp';
+@import 'components/teamComp';
 @import 'components/team';
-@import 'components/meet_team';
 @import 'components/bio';
-@import 'components/our_work';
-@import 'components/services_page';
+@import 'components/work';
+@import 'components/services';
+@import 'components/navigation';
+@import 'components/teamSlider';
 
 // Pages
 @import 'layouts/front';
+// @import 'layouts/nav';
