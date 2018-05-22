@@ -1,0 +1,118 @@
+.homepage_background {
+  position: absolute;
+  width: 100%;
+}
+
+//svg shapes coloring
+.st1 {fill:$clr-light-blue;}
+.st2 {fill:$clr-light-green;}
+.st3 {fill:$clr-drk-green;}
+.st4 {fill:$clr-drk-blue;}
+.white {fill: $clr-white;}
+
+.workContent {
+  position: relative;
+}
+
+.our_work {
+  position: relative;
+  width: 100%;
+
+  .work_intro {
+    width: 100%;
+    padding: 1em;
+    margin: 0 0 0 0;
+
+    @include media($tablet) {
+      // margin: 15rem 0 0 0;
+      padding: 3em 0 0 8em;
+      width: 40%;
+    }
+    @include media($desktop) {
+      // margin: 15rem 0 0 0;
+      padding: 3em 0 0 8em;
+      width: 40%;
+    }
+  }
+
+  h3,
+  p {
+    background-color: $clr-white;
+    padding: 0.5em;
+    margin: auto;
+    text-align: left;
+  }
+
+  h1 {
+    font-weight: bolder;
+    text-align: center;
+    // margin-top: 0;
+    padding: 0.5em 0 0 0;
+
+    @include media($tablet) {
+      padding: 3.5em 0 1.5em 0;
+    }
+    @include media($desktop) {
+      padding: 3.5em 0 1.5em 0;
+    }
+  }
+
+  svg.top {
+    height: 148px;
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    //border: 1px solid red;
+  }
+
+  .work_group {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 0 0 5rem 0;
+    width: 100%;
+
+    @include media($tablet) {
+      padding: 10rem 0 12rem 0;
+    }
+    @include media($desktop) {
+      padding: 10rem 0 12rem 0;
+    }
+
+    .workImg_vertical_phone {
+      margin: auto;
+      padding: 0;
+      height: 25rem;
+
+      @include media($tablet) {
+        height: 35rem;
+      }
+      @include media($desktop) {
+        height: 50rem;
+      }
+    }
+
+    .workImg_horizontal_phone {
+      margin: 0;
+      padding: 0;
+      height: 14rem;
+
+      @include media($tablet) {
+        height: 24rem;
+      }
+      @include media($desktop) {
+        height: 35rem;
+      }
+    }
+
+    .workImg_laptop {
+      width: 100%;
+      margin: auto;
+      @include media($tablet) {
+        width: 50%;
+      }
+      @include media($desktop) {
+        width: 60%;
+      }
+    }
+  }
+}

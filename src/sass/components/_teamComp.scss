@@ -1,0 +1,50 @@
+.team {
+
+  .team_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include media($tablet) {
+
+    }
+    @include media($desktop) {
+
+    }
+
+    a.team_img {
+      margin: auto;
+      padding: 0.5em;
+    }
+
+    a.team_img:hover img {
+      opacity: 0.5;
+    }
+
+  }
+
+  .team_title {
+    padding: 2em;
+
+    .meet_the_team {
+      text-decoration: none;
+      h1 {
+        color: $clr-drk-blue;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
+    }
+
+    button.contact_button {
+      background-color: $clr-drk-green;
+      border-radius: 8px;
+      color: white;
+      line-height: 0.5;
+      margin: auto;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
