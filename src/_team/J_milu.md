@@ -1,8 +1,10 @@
 ---
 name: Miluska Franz
 short_name: MILU
-title: Software Developer / Graphic Designer
+title: Developer / Designer
 image: Milu.png
 layout: person
 ---
-Lorem ipsum dolor sit amet, consectetuer adipiscing consectetuer adipiscing amet, consectetuer adipiscing consectetuer adipiscin blatuer adipiscing consectetuer a bla. Click here
+Milu is a developer and a designer originally from Lima, Peru. Milu’s pursuance of a computer science degree (class of 2018) has allowed her to specialize in taking projects from conception to deployment. Because she is hungry for daily personal and professional growth, Milu thrives in an environment that continually pushes the boundaries of her skills.
+
+* [LinkedIn](https://www.linkedin.com/in/miluska-franz/)
