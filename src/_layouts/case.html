@@ -22,7 +22,7 @@ layout: front
     <ul>
           {% for technology in page.technology %}
         <li>
-            {{page.technology | split: ", "}}
+            {{page.technology}} {{split: ", "}}
         </li>
           {% endfor %}
       </ul>
