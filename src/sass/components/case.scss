@@ -1,8 +1,61 @@
-.case {
+@mixin backImage($imagePath) {
+  background-image: url($imagePath);
+  background-size: cover;
+}
+.intro {
+    @include backImage("/img/shapes_pattern.png");
+    background-color: $clr-drk-green;
+    color: $clr-white;
+    padding: 2.5em;
+  width: 100%;
+}
+.case_background {
+  position: absolute;
+  border: 3px solid green;
+  width:100%;
+  height:100%;
+}
+.body {
   position: relative;
-  overflow: none;
-  svg {
-    position: absolute;
+  p.style {
+    max-width: 60%;
+padding: 4em;
+margin: auto;
+  }
+  li {
+    list-style-type: none;
+  }
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
+  border: 1px solid pink;
+  .specs {
+      text-align: center;
+      padding: 4em;
+      border: 1px solid red;
+  }
+  h1 {
+    width: 100%;
+    padding-left: 2em;
+  }
+
+}
+  .group {
+    border: 1px solid black;
+display: flex;
+    max-width: 60%;
+    margin: auto;
+  }
+  button.contact_button {
+    background-color: $clr-drk-green;
+    border-radius: 8px;
+    color: white;
+    line-height: 0.5;
+    margin: auto;
+    padding: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
   }
 }
