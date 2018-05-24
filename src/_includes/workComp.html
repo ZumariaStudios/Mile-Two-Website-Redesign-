@@ -2,13 +2,17 @@
   <svg class="homepage_background" viewBox="0 0 1366 4333" width="100%" height="100%" preserveAspectRatio="none"><use xlink:href="#homepage_background"></use></svg>
   <div class="workContent">
       <h1 class="ourWorkTitle animation-element">OUR WORK</h1>
-      {% for project in site.projects %}
-        <a href="/case.html"><div class="work_group animation-element">
+      {% for project in site.projects limit:3 %}
+        <a href="{{ project.url | relative_url }}"><div class="work_group animation-element">
           <div class="work_intro">
              <h3>{{project.title}}</h3>
              <p>{{project.intro}}</p>
           </div>
-          <img class="workImg_vertical_phone" src="/img/projects/{{project.image_1}}"/>
+          {% if project.mobile %}
+            <img class="workImg_vertical_phone" src="/img/projects/{{project.image_1}}"/>
+          {% else %}
+            <img class="workImg_laptop" src="/img/projects/{{project.image_1}}"/>
+          {% endif %}
        </div></a>
      {% endfor %}
   </div>

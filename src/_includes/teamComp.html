@@ -1,9 +1,10 @@
 <div class="team">
     <div class="team_gallery slider">
-      <a class="team_img" href=""><img src="/img/ppl_holder.png"/></a>
-      <a class="team_img" href=""><img src="/img/ppl_holder.png"/></a>
-      <a class="team_img" href=""><img src="/img/ppl_holder.png"/></a>
-      <a class="team_img" href=""><img src="/img/ppl_holder.png"/></a>
+      {% for image in site.static_files %}
+        {% if image.path contains '/img/groupImg' %}
+          <a class="team_img" href=""><img src="{{ image.path }}"/></a>
+        {% endif %}
+      {% endfor %}
     </div>
     <div class="team_title">
       <a href="/team.html" class="meet_the_team"><h1>MEET THE TEAM</h1></a>

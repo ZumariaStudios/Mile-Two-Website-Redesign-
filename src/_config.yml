@@ -28,6 +28,8 @@ collections:
     output: true
   services:
     output: true
+  groupImg:
+    output: true
 defaults:
   -
     scope:
