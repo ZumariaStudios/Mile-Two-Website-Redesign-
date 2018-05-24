@@ -15,6 +15,22 @@ $(document).ready(function(){
   swipeToSlide: true,
   arrows: false,
   dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  mobileFirst : true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings : 'unslick'
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
   });
 });
 
@@ -30,6 +46,7 @@ $(document).ready(function(){
     slidesToScroll: 3,
     swipeToSlide: true,
     arrows: false,
+    variableWidth: true,
   });
 });
 

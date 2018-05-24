@@ -26,12 +26,10 @@
     margin: 0 0 0 0;
 
     @include media($tablet) {
-      // margin: 15rem 0 0 0;
       padding: 3em 0 0 8em;
       width: 40%;
     }
     @include media($desktop) {
-      // margin: 15rem 0 0 0;
       padding: 3em 0 0 8em;
       width: 40%;
     }

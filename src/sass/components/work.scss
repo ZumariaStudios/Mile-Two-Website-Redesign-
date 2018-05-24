@@ -1,16 +1,15 @@
 .main {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   text-align: left;
-  justify-content: space-between;
+  // justify-content: space-between;
+
   .intro {
     position: relative;
     width: 100%;
     color: $clr-white;
     text-align: center;
     padding: 1em;
-   background-color: $clr-drk-green;
+    background-color: $clr-drk-green;
     background-image: url("/img/shapes_pattern.png");
 
   }
@@ -18,22 +17,13 @@
     width:100%;
     .project {
       margin: auto;
-      //border: 1px solid black;
       position: relative;
       padding: 1.3em;
+      
       h2,p {
-      //border: 1px solid pink;
       margin: 0;
       width: 75%;
 
-      }
-      svg {
-      //  border: 1px solid pink;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        height: 100%;
-        width: 25%;
       }
     }
     img {
