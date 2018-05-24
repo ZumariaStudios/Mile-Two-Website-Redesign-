@@ -2,52 +2,68 @@
   background-image: url($imagePath);
   background-size: cover;
 }
+
 .intro {
-    @include backImage("/img/shapes_pattern.png");
-    background-color: $clr-drk-green;
-    color: $clr-white;
-    padding: 2.5em;
+  @include backImage("/img/shapes_pattern.png");
+  background-color: $clr-drk-green;
+  color: $clr-white;
+  padding: 2.5em;
   width: 100%;
 }
+
 .case_background {
   position: absolute;
   border: 3px solid green;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
+
 .body {
   position: relative;
+  img {
+    width: 100%;
+  }
   p.style {
     max-width: 60%;
-padding: 4em;
-margin: auto;
+    padding: 4em;
+    margin: auto;
   }
+
   li {
     list-style-type: none;
   }
-.details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
-  border: 1px solid pink;
-  .specs {
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid pink;
+    h1 {
+      width: 100%;
+      padding-left: 2em;
+    }
+
+    .specs {
       text-align: center;
       padding: 4em;
       border: 1px solid red;
-  }
-  h1 {
-    width: 100%;
-    padding-left: 2em;
+    }
+
+
   }
 
-}
   .group {
     border: 1px solid black;
-display: flex;
-    max-width: 60%;
+    display: flex;
+    padding: 3em;
     margin: auto;
+    text-align: left;
   }
+.buttons{
+
+  display:flex;
+  padding: 5em;
+  border: 3px solid purple;
   button.contact_button {
     background-color: $clr-drk-green;
     border-radius: 8px;
@@ -56,6 +72,7 @@ display: flex;
     margin: auto;
     padding: 1.5rem;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-between;
   }
+}
 }
