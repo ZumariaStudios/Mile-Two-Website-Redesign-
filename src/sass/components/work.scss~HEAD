@@ -5,19 +5,16 @@
   text-align: left;
   justify-content: space-between;
   .intro {
-    position: relative;
     width: 100%;
+    text-align: left;
+    background-color: $clr-drk-green;
     color: $clr-white;
     text-align: center;
     padding: 1em;
-   background-color: $clr-drk-green;
-    background-image: url("/img/shapes_pattern.png");
-
   }
   .body {
-    width:100%;
+    width:100% !important;
     .project {
-      margin: auto;
       //border: 1px solid black;
       position: relative;
       padding: 1.3em;
