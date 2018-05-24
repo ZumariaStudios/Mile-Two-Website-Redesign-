@@ -27,12 +27,18 @@
     padding: 2em;
 
     .meet_the_team {
-      text-decoration: none;
       h1 {
         color: $clr-drk-blue;
         justify-content: center;
         text-align: center;
         position: relative;
+      }
+    }
+
+    .meet_the_team:hover {
+      h1 {
+        color: $clr-light-green;
+        transition: all 1s ease;
       }
     }
 
