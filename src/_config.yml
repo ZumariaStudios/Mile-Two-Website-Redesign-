@@ -26,6 +26,8 @@ collections:
     output: true
   team:
     output: true
+  services:
+    output: true
 defaults:
   -
     scope:
