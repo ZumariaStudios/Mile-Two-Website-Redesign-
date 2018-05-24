@@ -1,7 +1,7 @@
 ---
 name: Michael Heroux
 short_name: MICHAEL
-title: TBD
+title: User Experience Director
 image: Heroux.png
 layout: person
 ---

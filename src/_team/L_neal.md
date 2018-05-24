@@ -1,7 +1,7 @@
 ---
 name: Neal Strobl
 short_name: NEAL
-title: TBD
+title: Software Engineer
 image: Neal.png
 layout: person
 ---
