@@ -6,8 +6,8 @@ image_1: Tnebula_screen_1.png
 mobile: true
 image_2: Tnebula_screen_2.png
 image_3: Tnebula_screen_3.png
-client:
-technology:
+client: THE CLIENT HERE
+technology: ["html", "css", "ruby"]
 development:
 video:
 para_1: TNEBULA was designed as an interactive platform that enables laboratories to inventory intellectual property, present inventions to entrepreneurs and industry, and gain a rich understanding of commercial potential and pathways to market through intelligent reporting. It has become a discovery platform for inventors, industrialists, capitalists, entrepreneurs, and the generally curious.

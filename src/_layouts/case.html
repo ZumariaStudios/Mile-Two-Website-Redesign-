@@ -1,13 +1,10 @@
 ---
 layout: front
-slogan: Project #1
-title: Project Name Here
-permalink: /case.html/
 ---
 <div class="content">
   <div class="intro">
     <p>
-      Let's do it again then, what the heck. I thought today we would make a happy little stream that's just running through the woods here. I sincerely wish for you every possible joy life could bring. Let your heart be your guide. And just raise cain. If we're going to have animals around we all have to be concerned about them and take care of them.
+      {{page.para_1}}
     </p>
   </div>
   <div class="body">
@@ -17,22 +14,18 @@ permalink: /case.html/
   <div class="specs">
     <h2>CLIENT</h2>
     <p>
-      The client wanted something.
+      {{ page.client }}
     </p>
   </div>
   <div class="specs">
     <h2>TECHNOLOGY</h2>
     <ul>
-      <li>
-        Technology 1
-      </li>
-      <li>
-        Technology 2
-      </li>
-      <li>
-        Technology 3
-      </li>
-    </ul>
+          {% for technology in page.technology %}
+        <li>
+            {{page.technology | split: ", "}}
+        </li>
+          {% endfor %}
+      </ul>
   </div>
   <div class="specs">
     <h2>DEVELOPMENT</h2>
