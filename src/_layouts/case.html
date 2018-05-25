@@ -3,9 +3,9 @@ layout: front
 ---
 <div class="content">
   <div class="intro">
-    <p>
+    <h3>
       {{page.intro}}
-    </p>
+    </h3>
   </div>
   <div class="body">
 <svg class="case_background"><use xlink:href="#case_background" viewBox="0 0 1366 4725.3" width="100%" height="100%" preserveAspectRatio="none"></use></svg>
@@ -55,10 +55,18 @@ layout: front
       {{page.para_1}}
     </p>
   </div>
-<img src="/img/placeholder.jpg" />
+  {% if page.workImg %}
+  <img src="/img/projects/{{page.work_page_img}}"/>
+  {% else %}
+  <img src="/img/placeholder.jpg"/>
+  {%endif%}
 <div class="group">
   <div class="wrapper">
+    {%if page.img1%}
+  <img src="/img/projects/{{page.image_1}}" />
+  {%else %}
   <img src="/img/cell_one.png" />
+  {%endif%}
   <p class="style">
   {{page.para_2}}
   </p>
@@ -67,10 +75,12 @@ layout: front
 <img class="break" src="/img/cell_two.png" />
 <!-- BEGIN "PREVIEW SECTION" for next project that would link to next project page-->
 <div class="group">
+  <div class="wrapper">
 <h2>Project #2</h2>
 <p class="style">
   Fluff it up a little and hypnotize it. Let's do that again. At home you have unlimited time.
 </p>
+</div>
 </div>
 <div class="buttons">
   <button class="contact_button">OUR WORK</button>

@@ -2,10 +2,14 @@
 layout: case
 title: TNEBULA
 work_page_img: workpage_Tnebula.jpg
+workImg: true
 image_1: Tnebula_screen_1.png
+img1: true
 mobile: true
 image_2: Tnebula_screen_2.png
+img2: true
 image_3: Tnebula_screen_3.png
+img3: true
 client: THE CLIENT HERE
 tech1: ruby
 tech2: html

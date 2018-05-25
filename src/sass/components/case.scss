@@ -30,9 +30,17 @@
   }
 
   p.style {
-    max-width: 60%;
-    padding: 4em;
+    padding: 2em;
     margin: auto;
+    @include media($desktop) {
+      max-width: 60%;
+      padding: 4em;
+      margin: auto;
+    }
+    @include media($tablet){
+      max-width: 70%;
+      margin:0;
+    }
   }
 
   li {
@@ -64,23 +72,51 @@
   }
 
   .group {
-    text-align: left;
-    width: 100%;
-    display: flex;
+
+    @include media($desktop) {
+      text-align: left;
+      width: 100%;
+      display: flex;
+      margin: 3em 0;
+    }
 
     .wrapper {
-      display: flex;
-      margin: auto;
-      width: 70%;
+      @include media($tablet){
+        display:inline-flex;
+        position: relative;
+        z-index: 2;
+        background-color: $clr-white;
+      }
+      @include media($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 70%;
+        h2 {
+          padding-left: 0;
+        }
+        p {
+          padding:0;
+        }
+      }
     }
 
     h2 {
-      padding: 3em;
+        padding-left: 1.3em;
     }
 
+
     img {
-      width: 353px;
-      height: 644px;
+      padding: 2em;
+      @include media($tablet) {
+        padding: 2em;
+        max-width: 300px;
+        max-height:450px;
+      }
+      @include media($desktop) {
+        width: 353px;
+        height: 644px;
+      }
     }
   }
 
@@ -90,10 +126,9 @@
   }
 
   .buttons {
-    display: flex;
-
-padding: 5em;
-justify-content: space-between;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 0em 0em 8em 2em;
 
     button.contact_button {
       background-color: $clr-drk-green;
@@ -105,11 +140,21 @@ justify-content: space-between;
       display: inline-flex;
       justify-content: space-between;
     }
+    @include media($tablet){
+          margin: 0em 0em 8em 2em;
+    }
+    @include media($desktop) {
+    margin:0;
+    display: flex;
+    padding: 5em;
+    justify-content: space-between;
+  }
   }
 
   .phone_wall {
     display: inline-flex;
     width: 100%;
+    max-height: 200px;
 
     img:nth-of-type(2) {
       transform: scaleX(-1);
