@@ -1,5 +1,5 @@
 .page_person {
-  // padding-top: 2rem;
+  padding-top: 2rem;
   // border: 5px solid red;
 
   .top_area {
@@ -102,6 +102,17 @@
       a {
         color: $clr-light-green;
         text-decoration: none;
+      }
+
+      button.go_back_button {
+        background-color: $clr-light-green;
+        border: none;
+        border-radius: 8px;
+        color: $clr-drk-green;
+        line-height: 0.5;
+        font-weight: bold;
+        margin: 2rem 0 0 0;
+        padding: 1.5rem;
       }
     }
 }
