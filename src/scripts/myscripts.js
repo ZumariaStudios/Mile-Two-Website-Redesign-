@@ -34,6 +34,19 @@ $(document).ready(function(){
   });
 });
 
+// slideshow preferences in bio pages
+$(document).ready(function(){
+  $('.personal_slider').slick({
+    centerMode: true,
+    dots: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    arrows: false,
+  });
+});
+
 // slideshow preferences in meet the team
 $(document).ready(function(){
   $('.slider').slick({

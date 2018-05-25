@@ -1,5 +1,5 @@
 .page_person {
-  padding-top: 2rem;
+  // padding-top: 2rem;
   // border: 5px solid red;
 
   .top_area {
@@ -20,17 +20,24 @@
     width: 100%;
 
     @include media($tablet) {
-      width: 50%;
+      width: 70%;
     }
     @include media($desktop) {
       width: 50%;
     }
 
     .person_img {
-      width: 50%;
+      width: 80%;
       margin: auto;
       display: table-cell;
       vertical-align: middle;
+
+      @include media($tablet) {
+        width: 100%;
+      }
+      @include media($desktop) {
+        width: 90%;
+      }
     }
   }
 
