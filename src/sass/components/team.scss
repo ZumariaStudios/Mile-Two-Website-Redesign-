@@ -20,41 +20,35 @@
     background-color: $clr-drk-green;
     color: $clr-white;
     padding: 2.5em;
+
+    p, h1 {
+      width: 100%;
+
+      @include media($tablet) {
+        margin: auto;
+        width: 70%;
+      }
+      @include media($desktop) {
+        margin: auto;
+        width: 70%;
+      }
+    }
   }
 
-
-.team_info {
-  width: 100%;
-  padding: 1em;
-  margin: 1em 0 3em 0;
-  position: relative;
-  text-align: center;
-
-  .our_values {
-    display:flex;
-    flex-wrap: wrap;
+  .benefits, .join{
+    max-width: 100%;
     margin: auto;
-    width: 80%;
+    padding: 2em;
+
     @include media($tablet) {
-      width: 60%;
+      background-color: $clr-white;
+      max-width: 70%;
     }
     @include media($desktop) {
-       width: 40%;
+      background-color: $clr-white;
+      max-width: 70%;
     }
-}
-
-.benefits, .join{
-  max-width: 100%;
-  margin: auto;
-  padding: 2em;
-
-  @include media($tablet) {
-    max-width: 70%;
   }
-  @include media($desktop) {
-    max-width: 70%;
-  }
-}
 
 
   button.contact_button {
@@ -67,6 +61,4 @@
     display: flex;
     justify-content: center;
   }
-
-}
 }

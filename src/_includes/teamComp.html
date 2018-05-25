@@ -2,7 +2,7 @@
     <div class="team_gallery slider">
       {% for image in site.static_files %}
         {% if image.path contains '/img/groupImg' %}
-          <a class="team_img" href=""><img src="{{ image.path }}"/></a>
+          <a class="team_img" href="/team.html"><img src="{{ image.path }}"/></a>
         {% endif %}
       {% endfor %}
     </div>

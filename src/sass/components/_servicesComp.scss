@@ -38,7 +38,7 @@ $gradient-transparency: 0.17;
   }
 
   .slideshow_container {
-    margin: auto;
+    // margin: auto;
     padding-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +54,18 @@ $gradient-transparency: 0.17;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    .servSlideshow {
+      .icon {
+        width: 100%;
+        img {
+          display: block;
+          margin: auto;
+          padding-top: 2rem;
+          width:8rem;
+        }
+      }
     }
   }
 }
