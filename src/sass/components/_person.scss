@@ -20,17 +20,24 @@
     width: 100%;
 
     @include media($tablet) {
-      width: 50%;
+      width: 70%;
     }
     @include media($desktop) {
       width: 50%;
     }
 
     .person_img {
-      width: 50%;
+      width: 80%;
       margin: auto;
       display: table-cell;
       vertical-align: middle;
+
+      @include media($tablet) {
+        width: 100%;
+      }
+      @include media($desktop) {
+        width: 90%;
+      }
     }
   }
 
@@ -95,6 +102,17 @@
       a {
         color: $clr-light-green;
         text-decoration: none;
+      }
+
+      button.go_back_button {
+        background-color: $clr-light-green;
+        border: none;
+        border-radius: 8px;
+        color: $clr-drk-green;
+        line-height: 0.5;
+        font-weight: bold;
+        margin: 2rem 0 0 0;
+        padding: 1.5rem;
       }
     }
 }

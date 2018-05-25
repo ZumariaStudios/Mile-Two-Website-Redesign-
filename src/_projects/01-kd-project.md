@@ -3,14 +3,24 @@ layout: case
 title: KD
 work_page_img: workpage_KD.jpg
 image_1: KD_screen_1.png
+has_image_1: true
 mobile: false
 image_2: KD-2_screen_2.png
+has_image_2: true
 image_3:
-customer: THE CLIENT HERE
-technology: ['html', 'css']
-development:
+has_image_3: false
+customer: NASIC GSI
+tech1: React
+tech2: Redux
+tech3: Material-Ui
+tech4: React-Plotly.js
+tech5: Plotly.js
+dev1: Prototyping
+dev2: Frontend
+dev3: Backend Systems
 video:
-para_1: KD was designed as an interactive platform that enables laboratories to inventory intellectual property, present inventions to entrepreneurs and industry, and gain a rich understanding of commercial potential and pathways to market through intelligent reporting. It has become a discovery platform for inventors, industrialists, capitalists, entrepreneurs, and the generally curious.
-para_2: TNEBULA forms the connective tissue between our region’s small businesses, larger corporations, and laboratories so that collaboratively we can drive innovation and introduce real products into the market. We work with labs all over the country and allow our network of entrepreneurs, technical, and industry experts, and students to collaborate and produce some amazing data, giving us real insight into the health of our country’s innovation pipeline.
-intro: We built a mobile-first web application that allows investors, innovators, and entrepreneurs to connect around cutting-edge research.
+has_video: false
+intro: KD explored the application of a function-based approach to intelligence analysis, showing how this would complement Structured Observation Management (SOM) and Activity Based Intelligence (ABI) methods currently being implemented.
+para_1: Knowledge Discovery is focused on supporting the geospatial analyst at NASIC. The project documents current manual and automated content capture, identifying gaps where capture techniques are not currently utilized. Using direct observation (knowledge elicitation) and process tracing techniques and conceptual design seeds, we explore ways to integrate with or supplement current tools to better support the analytic process. The team creates conceptual tool designs for the analyst to use now while envisioning the analytic environment of the future.
+para_2: KD explored the application of a function-based approach to intelligence analysis, showing how this would complement Structured Observation Management (SOM) and Activity Based Intelligence (ABI) methods currently being implemented. This new approach provides a vision for where GSI intelligence analysis could be in 5-10 years. This envisioning is complemented by building a proof of concept tool to aid analysts in working with the event models used for indications and warnings. While fundamentally pragmatic, this tool also supports SOM integration and the knowledge capture necessary to support the analyst both now and in the future.
 ---
