@@ -1,5 +1,16 @@
 // Header component on the front page
 
+header {
+  height: 51rem;
+
+  @include media($tablet) {
+    height: 32rem;
+  }
+  @include media($desktop) {
+    height: 32rem;
+  }
+}
+
 .box-shadow-menu-wrap {
   height: 5rem;
 
@@ -53,11 +64,11 @@ header {
     @include backImage("/img/Mobile_header_structure.png");
 
     @include media($tablet) {
-        @include backImage("/img/Desktop_header_structure.png");
+        @include backImage("/img/Header_full_shape.png");
     }
 
     @include media($desktop) {
-        @include backImage("/img/Desktop_header_structure.png");
+        @include backImage("/img/Header_full_shape.png");
     }
 
     .logo {
@@ -81,6 +92,7 @@ header {
       @include media($tablet) {
         animation: slideInDesktop 1s forwards;
         margin: -15rem 0 0 14rem;
+        width: 40%;
       }
 
       @include media($desktop) {

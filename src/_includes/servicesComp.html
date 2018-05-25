@@ -3,6 +3,7 @@
     <div class="slideshow_container">
       {% for services in site.services %}
         <div class="servSlideshow">
+            <div class="icon"><img src="/img/services/{{services.icon}}"/></div>
             <h2 class="serv_h2">{{services.title}}</h2>
             <p class="serv_p">{{services.content}}</p>
         </div>
