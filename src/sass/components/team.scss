@@ -1,0 +1,64 @@
+
+
+@mixin backImage($imagePath) {
+  background-image: url($imagePath);
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+
+  .team_background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .manifesto {
+    @include backImage("/img/shapes_pattern.png");
+    background-color: $clr-drk-green;
+    color: $clr-white;
+    padding: 2.5em;
+
+    p, h1 {
+      width: 100%;
+
+      @include media($tablet) {
+        margin: auto;
+        width: 70%;
+      }
+      @include media($desktop) {
+        margin: auto;
+        width: 70%;
+      }
+    }
+  }
+
+  .benefits, .join{
+    max-width: 100%;
+    margin: auto;
+    padding: 2em;
+
+    @include media($tablet) {
+      background-color: $clr-white;
+      max-width: 70%;
+    }
+    @include media($desktop) {
+      background-color: $clr-white;
+      max-width: 70%;
+    }
+  }
+
+
+  button.contact_button {
+    background-color: $clr-drk-green;
+    border-radius: 8px;
+    color: white;
+    line-height: 0.5;
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,42 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+  .intro {
+    width: 100%;
+    text-align: left;
+    background-color: $clr-drk-green;
+    color: $clr-white;
+    text-align: center;
+    padding: 1em;
+  }
+  .body {
+    width:100% !important;
+    .project {
+      //border: 1px solid black;
+      position: relative;
+      padding: 1.3em;
+      h2,p {
+      //border: 1px solid pink;
+      margin: 0;
+      width: 75%;
+
+      }
+      svg {
+      //  border: 1px solid pink;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 25%;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+
+}

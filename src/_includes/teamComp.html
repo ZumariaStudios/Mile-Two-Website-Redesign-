@@ -1,0 +1,13 @@
+<div class="team">
+    <div class="team_gallery slider">
+      {% for image in site.static_files %}
+        {% if image.path contains '/img/groupImg' %}
+          <a class="team_img" href="/team.html"><img src="{{ image.path }}"/></a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="team_title">
+      <a href="/team.html" class="meet_the_team"><h1>MEET THE TEAM</h1></a>
+      <a href="mailto:info@miletwo.us"><button class="contact_button">CONTACT US</button></a>
+    </div>
+</div>

@@ -4,6 +4,7 @@
 @import 'normalize.css/normalize';
 @import 'bourbon/core/bourbon';
 @import 'bourbon-neat/app/assets/stylesheets/neat';
+@import 'node_modules/slick-carousel/slick/slick.scss';
 
 
 // Defaults
@@ -17,7 +18,18 @@
 @import 'components/content';
 @import 'components/footer';
 @import 'components/header';
-
+@import 'components/servicesComp';
+@import 'components/workComp';
+@import 'components/teamComp';
+@import 'components/valuesComp';
+@import 'components/team';
+@import 'components/person';
+@import 'components/work';
+@import 'components/services';
+@import 'components/navigation';
+@import 'components/teamSlider';
+@import 'components/case';
 
 // Pages
-@import 'pages/front';
+@import 'layouts/front';
+// @import 'layouts/nav';

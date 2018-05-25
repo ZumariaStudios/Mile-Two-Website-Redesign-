@@ -1,0 +1,68 @@
+@keyframes swing {
+    15% {transform: translateX(5px);}
+    30% {transform: translateX(-5px);}
+    50% {transform: translateX(3px);}
+    65% {transform: translateX(-3px);}
+    80% {transform: translateX(2px);}
+    100% {transform: translateX(0);}
+}
+
+@mixin backImage($imagePath) {
+  background-image: url($imagePath);
+  background-size: cover;
+}
+
+.navigation {
+  @include backImage("/img/Mobile_navigation_shape.png");
+  background-color: $clr-drk-green;
+  height: 1200px;
+
+  @include media($tablet) {
+      @include backImage("/img/Desktop_navigation_shapes.png");
+  }
+
+  @include media($desktop) {
+      @include backImage("/img/Desktop_navigation_shapes.png");
+  }
+
+  .nav_logo {
+    padding-top: 2rem;
+    width: 100%;
+
+    .M2_Logo {
+      width: 100%;
+
+      .M2_svg {
+        fill: $clr-white;
+        }
+    }
+  }
+
+  .nav {
+    padding: 3rem 0 0 6.2rem;
+
+    .nav_link {
+      color: $clr-white;
+      text-decoration: none;
+
+      h1 {
+        font-size: 2.8rem;
+
+        @include media($tablet) {
+            font-size: 3rem;
+        }
+
+        @include media($desktop) {
+            font-size: 5rem;
+        }
+      }
+    }
+
+    .nav_link:hover {
+      animation: swing 1s ease;
+      animation-iteration-count: 1;
+      transition: all 1s ease;
+      color: $clr-light-green;
+    }
+  }
+}

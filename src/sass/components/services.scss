@@ -1,0 +1,43 @@
+.content {
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+  }
+
+  .services_body {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    .processes {
+      max-width: 80%;
+      margin: auto;
+      text-align: left;
+      padding-bottom: 3rem;
+      @include media($tablet) {
+        max-width: 60%;
+      }
+      @include media($desktop) {
+        max-width: 60%;
+      }
+    }
+
+    h1 {
+      color: $clr-drk-blue;
+      margin: 0;
+      padding: 1em;
+      text-align: center;
+    }
+
+    h2 {
+      color: $clr-drk-blue;
+    }
+
+    img {
+      max-width: 80%;
+    }
+  }
+}

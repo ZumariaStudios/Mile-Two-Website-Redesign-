@@ -1,0 +1,18 @@
+---
+layout: front
+---
+<div class="page_person">
+  <div class="top_area">
+      <div class="person_info">
+          <h2 class="person_name">{{page.name}}</h2>
+          <p class="person_title">{{page.title}}</p>
+      </div>
+      <div class="image_wrap">
+        <img class="person_img" src="/img/teamImgs/{{page.image}}" />
+      </div>
+  </div>
+  <div class="person_bio">
+    {{ page.content }}
+    <a href="/team.html"><button class="go_back_button">GO BACK</button></a>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+.main {
+  width: 100%;
+  text-align: left;
+  // justify-content: space-between;
+
+  .intro {
+    position: relative;
+    width: 100%;
+    color: $clr-white;
+    text-align: center;
+    padding: 1em;
+    background-color: $clr-drk-green;
+    background-image: url("/img/shapes_pattern.png");
+
+  }
+  .body {
+    width:100%;
+    .project {
+      margin: auto;
+      position: relative;
+      padding: 1.3em;
+      
+      h2,p {
+      margin: 0;
+      width: 75%;
+
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+
+}

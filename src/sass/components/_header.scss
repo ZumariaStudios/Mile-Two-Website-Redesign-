@@ -1,16 +1,122 @@
 // Header component on the front page
+
 header {
-    background-color: white;
-    background-size: cover;
-    color: $clr-white;
-    display: flex;
-    justify-content: space-between;
-    min-height: 66%;
+  height: 51rem;
+
+  @include media($tablet) {
+    height: 32rem;
+  }
+  @include media($desktop) {
+    height: 32rem;
+  }
+}
+
+.box-shadow-menu-wrap {
+  height: 5rem;
+
+  .box-shadow-menu {
+    margin: 3rem 3rem 0 0;
+    position: relative;
+  }
+  .box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1.2em;
+    height: 0.08em;
+    background: black;
+    box-shadow:
+      0 0.25em 0 0 black,
+      0 0.5em 0 0 black;
+  }
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:0;}
+    80% {opacity:1;}
+    100% {
+    opacity:1;
+    transform: translate(0, 25px);
+  }
+}
+
+@keyframes slideInMobile {
+  0% {transform: translate(-800px, 0);}
+  100% {transform: translate(0, 0);}
+}
+
+@keyframes slideInDesktop {
+  0% {
+    opacity: 0;
+    transform: translate(-50px, 0);
+  }
+  80% {opacity: 1;}
+  100% {transform: translate(0, 0);}
+}
+
+@mixin backImage($imagePath) {
+  background-image: url($imagePath);
+  background-size: cover;
+}
+header {
+    @include backImage("/img/Mobile_header_structure.png");
+
+    @include media($tablet) {
+        @include backImage("/img/Header_full_shape.png");
+    }
 
     @include media($desktop) {
-        display: flex;
-        flex-direction: row;
-        padding: 2.0em;
-        text-align: left;
+        @include backImage("/img/Header_full_shape.png");
+    }
+
+    .logo {
+      display: flex;
+      justify-content: space-between;
+
+      .M2_svg {
+        height: 14rem;
+        fill: $clr-drk-green;
+        margin: 3rem 0 0 3rem;
+        width: 9rem;
+      }
+    }
+
+    .header_Info {
+      animation: slideInMobile 1s forwards;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 0 4rem;
+
+      @include media($tablet) {
+        animation: slideInDesktop 1s forwards;
+        margin: -15rem 0 0 14rem;
+        width: 40%;
+      }
+
+      @include media($desktop) {
+        animation: slideInDesktop 1s forwards;
+        margin: -15rem 0 0 14rem;
+        width: 40%;
+      }
+
+      .slogan {
+        color: $clr-drk-blue;
+        font-family: 'Open sans', sans-serif;
+        font-weight: bolder;
+        line-height: 1.15;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      button.header_button {
+        background-color: $clr-drk-green;
+        border-radius: 8px;
+        color: white;
+        line-height: 0.5;
+        margin: 0 0 5rem 0;
+        padding: 1.5rem;
+      }
     }
 }

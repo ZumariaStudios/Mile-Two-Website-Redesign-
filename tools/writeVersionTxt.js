@@ -23,7 +23,7 @@ catch (err) {
     console.log('    ' + err.message);
 }
 
-fs.appendFileSync(out, '\nCuro Venture Studio Website');
+fs.appendFileSync(out, '\nMile Two Website');
 fs.appendFileSync(out, '\n===========================');
 fs.appendFileSync(out, '\nName: ' + pkg.name);
 fs.appendFileSync(out, '\nDescription: ' + pkg.description);

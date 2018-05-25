@@ -1,0 +1,26 @@
+.team_info {
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0 3em 0;
+  position: relative;
+  text-align: center;
+
+  .our_values {
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+
+    .slide {
+      margin: auto;
+      width: 100%;
+
+      @include media($tablet) {
+        width: 50%;
+      }
+      @include media($desktop) {
+        width: 30%;
+      }
+    }
+  }
+}

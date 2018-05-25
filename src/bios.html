@@ -1,0 +1,22 @@
+---
+layout: front
+slogan: Our Team
+title: Mile Two / Our Team
+permalink: /our_team.html/
+---
+<div class="sliderTeam">
+  {% for person in site.team %}
+  <div class="page_person">
+      <div class="person_info">
+          <h2 class="person_name">{{person.name}}</h2>
+          <p class="person_title">{{person.title}}</p>
+      </div>
+      <div class="image_wrap">
+        <img class="person_img" src="/img/teamImgs/{{person.image}}" />
+      </div>
+      <div class="person_bio">
+        {{person.content}}
+      </div>
+  </div>
+  {% endfor %}
+</div>

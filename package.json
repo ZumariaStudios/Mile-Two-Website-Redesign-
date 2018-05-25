@@ -61,5 +61,9 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "scrollreveal": "^3.4.0",
+    "slick-carousel": "^1.8.1"
   }
 }
