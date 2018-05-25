@@ -19,17 +19,28 @@
 
 .body {
   position: relative;
+
   h1 {
     width: 100%;
-    text-align:center;
+    text-align: center;
   }
+
   img {
     width: 100%;
   }
+
   p.style {
-    max-width: 60%;
-    padding: 4em;
+    padding: 2em;
     margin: auto;
+    @include media($desktop) {
+      max-width: 60%;
+      padding: 4em;
+      margin: auto;
+    }
+    @include media($tablet){
+      max-width: 70%;
+      margin:0;
+    }
   }
 
   li {
@@ -41,56 +52,112 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+
     .specs {
       text-align: center;
-      padding: 4em;
+      margin: 4em;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        text-align: center;
+      }
+
+      h2 {
+        font-weight: 900;
+      }
     }
-
-
   }
 
   .group {
-    border: 1px solid #000;
+
+    @include media($desktop) {
       text-align: left;
       width: 100%;
-      display:flex;
-      .wrapper{
-        display: flex;
-        margin: auto;
-        width:70%;
-      }
-    h2 {
-      padding: 3em;
+      display: flex;
+      margin: 3em 0;
     }
-    img {
-      width: 353px;
-      height: 644px;
-    }
-  }
-  .break {
-    max-height: 350px;
-  }
-.buttons{
 
-  display:flex;
-  padding: 5em;
-  button.contact_button {
-    background-color: $clr-drk-green;
-    border-radius: 8px;
-    color: white;
-    line-height: 0.5;
-    margin: auto;
-    padding: 1.5rem;
+    .wrapper {
+      @include media($tablet){
+        display:inline-flex;
+        position: relative;
+        z-index: 2;
+        background-color: $clr-white;
+      }
+      @include media($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 70%;
+        h2 {
+          padding-left: 0;
+        }
+        p {
+          padding:0;
+        }
+      }
+    }
+
+    h2 {
+        padding-left: 1.3em;
+    }
+
+
+    img {
+      padding: 2em;
+      @include media($tablet) {
+        padding: 2em;
+        max-width: 300px;
+        max-height:450px;
+      }
+      @include media($desktop) {
+        width: 353px;
+        height: 644px;
+      }
+    }
+  }
+
+  .break {
+    max-height: 500px;
+    width: 70%;
+  }
+
+  .buttons {
     display: inline-flex;
+    justify-content: space-evenly;
+    margin: 0em 0em 8em 2em;
+
+    button.contact_button {
+      background-color: $clr-drk-green;
+      border-radius: 8px;
+      color: white;
+      line-height: 0.5;
+      margin: auto;
+      padding: 1.5rem;
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    @include media($tablet){
+          margin: 0em 0em 8em 2em;
+    }
+    @include media($desktop) {
+    margin:0;
+    display: flex;
+    padding: 5em;
     justify-content: space-between;
   }
-}
+  }
 
   .phone_wall {
     display: inline-flex;
     width: 100%;
-    img:nth-of-type(2){
-      transform:scaleX(-1);
+    max-height: 200px;
+
+    img:nth-of-type(2) {
+      transform: scaleX(-1);
     }
   }
 }
